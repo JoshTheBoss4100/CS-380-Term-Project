@@ -3,12 +3,15 @@
 <head>
    <meta charset="utf-8">
    <title>JJ Library</title>
-   <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="style.css" />   
    <link rel="icon" href="images/book.png"/>
+   <script src="js/script.js" type="text/javascript"></script>
+   <script src="js/function.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
      <h1>Library</h1>
+     
 </header>
 <nav>
     <ul>
@@ -26,15 +29,17 @@
     <!-- <img id="left" src="images/blue-flower.png" alt="blueflower">
     <img id="right" src="images/blue-flower.png" alt="blueflower">  -->
 </nav>
-<div>
+<div id="bestseller_main">
      
     <h2><a href ="bestseller.html">Bestsellers</a></h2>
     
 </div>
-<div>
+<div id="favorites_main">
     <h2><a href="favorite.html">Our Favorites</a></h2>
 </div>
 
 <main>
 </main>
+<script>DisplayBestSellers()</script>
+<script>DisplayFavorites()</script>
 </body>

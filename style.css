@@ -36,8 +36,8 @@ div{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     border: 2px dashed black;
-    padding-bottom: 150px;
-    margin: 30px;
+    padding-bottom: 20px;
+    margin: 10px;
 }
 a:link{
     text-decoration: none;
@@ -53,4 +53,13 @@ a:hover{
 a:active{
     text-decoration: none;
     color:black;
+}
+#bestseller_main img,#favorites_main img  {
+    width: 200px;
+    height: auto;
+    margin: 30px;
+}
+#bestseller_main img:hover,#favorites_main img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
