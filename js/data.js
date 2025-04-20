@@ -14,7 +14,6 @@ const bookData = [{
                 }
             }
         },
-        demand: 1,
         favorite: true,
         bestseller: false
     },
@@ -34,7 +33,6 @@ const bookData = [{
             }
         }
     },
-    demand: 1,
     favorite: true,
     bestseller: false
 },
@@ -54,7 +52,6 @@ const bookData = [{
             }
         }
     },
-    demand: 1,
     favorite: true,
     bestseller: false
 },
@@ -74,7 +71,6 @@ const bookData = [{
             }
         }
     },
-    demand: 1,
     favorite: true,
     bestseller: false
 },
@@ -94,7 +90,6 @@ const bookData = [{
             }
         }
     },
-    demand: 1,
     favorite: true,
     bestseller: false
 },
@@ -114,7 +109,6 @@ const bookData = [{
             }
         }
     },
-    demand: 5,
     favorite: true,
     bestseller: true
 },
@@ -134,7 +128,6 @@ const bookData = [{
             }
         }
     },
-    demand: 5,
     favorite: false,
     bestseller: true
 },
@@ -154,7 +147,6 @@ const bookData = [{
             }
         }
     },
-    demand: 5,
     favorite: false,
     bestseller: true
 },
@@ -174,7 +166,6 @@ const bookData = [{
             }
         }
     },
-    demand: 1,
     favorite: true,
     bestseller: false
 },
@@ -194,7 +185,6 @@ const bookData = [{
             }
         }
     },
-    demand: 1,
     favorite: false,
     bestseller: false
 },
@@ -214,7 +204,6 @@ const bookData = [{
             }
         }
     },
-    demand: 1,
     favorite: false,
     bestseller: false
 },
@@ -234,7 +223,6 @@ const bookData = [{
             }
         }
     },
-    demand: 1,
     favorite: false,
     bestseller: true
 },
@@ -254,7 +242,6 @@ const bookData = [{
             }
         }
     },
-    demand: 5,
     favorite: false,
     bestseller: true
 },
