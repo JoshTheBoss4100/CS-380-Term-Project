@@ -15,7 +15,8 @@ const bookData = [{
             }
         },
         favorite: true,
-        bestseller: false
+        bestseller: false,
+        newArrival: false
     },
 {
     book: {
@@ -34,7 +35,8 @@ const bookData = [{
         }
     },
     favorite: true,
-    bestseller: false
+    bestseller: false,
+    newArrival: false
 },
 {
     book: {
@@ -53,7 +55,8 @@ const bookData = [{
         }
     },
     favorite: true,
-    bestseller: false
+    bestseller: false,
+    newArrival: false
 },
 {
     book: {
@@ -72,7 +75,8 @@ const bookData = [{
         }
     },
     favorite: true,
-    bestseller: false
+    bestseller: false,
+    newArrival: false
 },
 {
     book: {
@@ -91,7 +95,8 @@ const bookData = [{
         }
     },
     favorite: true,
-    bestseller: false
+    bestseller: false,
+    newArrival: false
 },
 {
     book: {
@@ -110,7 +115,8 @@ const bookData = [{
         }
     },
     favorite: true,
-    bestseller: true
+    bestseller: true,
+    newArrival: false
 },
 {
     book: {
@@ -129,7 +135,8 @@ const bookData = [{
         }
     },
     favorite: false,
-    bestseller: true
+    bestseller: true,
+    newArrival: false
 },
 {
     book: {
@@ -148,7 +155,8 @@ const bookData = [{
         }
     },
     favorite: false,
-    bestseller: true
+    bestseller: true,
+    newArrival: true
 },
 {
     book: {
@@ -167,7 +175,8 @@ const bookData = [{
         }
     },
     favorite: true,
-    bestseller: false
+    bestseller: false,
+    newArrival: false
 },
 {
     book: {
@@ -186,7 +195,8 @@ const bookData = [{
         }
     },
     favorite: false,
-    bestseller: false
+    bestseller: false,
+    newArrival: false
 },
 {
     book: {
@@ -205,7 +215,8 @@ const bookData = [{
         }
     },
     favorite: false,
-    bestseller: false
+    bestseller: false,
+    newArrival: false
 },
 {
     book: {
@@ -224,7 +235,8 @@ const bookData = [{
         }
     },
     favorite: false,
-    bestseller: true
+    bestseller: true,
+    newArrival: false
 },
 {
     book: {
@@ -243,7 +255,227 @@ const bookData = [{
         }
     },
     favorite: false,
-    bestseller: true
+    bestseller: true,
+    newArrival: false
 },
-
+{
+    book: {
+        author:"Abby Jimenez",
+         title: "Say You'll Remember Me",
+         genre: "Romance",
+         choice:{
+            softcover:{ 
+                image: "bookImages/rememberMesc.jpg",
+                price: "18.99"
+            },
+            hardcover: {
+                image: "bookImages/rememberMesc.jpg",
+                price: "21.99"
+            }
+        }
+    },
+    favorite: false,
+    bestseller: true,
+    newArrival: true
+},
+{
+    book: {
+        author:"Alice Feeney",
+         title: "Beautiful Ugly",
+         genre: "Mystery",
+         choice:{
+            softcover:{ 
+                image: "bookImages/beautifuluglysc.jpg",
+                price: "16.99"
+            },
+            hardcover: {
+                image: "bookImages/beautifuluglysc.jpg",
+                price: "21.99"
+            }
+        }
+    },
+    favorite: false,
+    bestseller: false,
+    newArrival: true
+},
+{
+    book: {
+        author:"Alex Michaelides",
+         title: "The Silent Patient",
+         genre: "Mystery",
+         choice:{
+            softcover:{ 
+                image: "bookImages/silentpatient.jpg",
+                price: "11.99"
+            },
+            hardcover: {
+                image: "bookImages/silentpatient.jpg",
+                price: "19.99"
+            }
+        }
+    },
+    favorite: true,
+    bestseller: true,
+    newArrival: false
+},
+{
+    book: {
+        author:"Natasha Preston",
+            title: "The Party",
+            genre: "Mystery",
+            choice:{
+                softcover:{ 
+                    image: "bookImages/theparty.jpg",
+                    price: "18.99"
+                },
+                hardcover: {
+                    image: "bookImages/theparty.jpg",
+                    price: "21.99"
+                }
+            }
+        },
+    favorite: false,
+    bestseller: false,
+    newArrival: true
+},
+{
+    book: {
+        author:"Karen M. McManus",
+            title: "One Of Us Is Lying",
+            genre: "Mystery",
+            choice:{
+                softcover:{ 
+                    image: "bookImages/oneofusislying.jpg",
+                    price: "15.99"
+                },
+                hardcover: {
+                    image: "bookImages/oneofusislying.jpg",
+                    price: "18.99"
+                }
+            }
+    },
+    favorite: false,
+    bestseller: true,
+    newArrival: false
+},
+{
+    book: {
+        author:"Emily Henry",
+            title: "Beach Read",
+            genre: "Romance",
+            choice:{
+                softcover:{ 
+                    image: "bookImages/beachread.jpg",
+                    price: "18.99"
+                },
+                hardcover: {
+                    image: "bookImages/beachread.jpg",
+                    price: "21.99"
+                }
+            }
+        },
+    favorite: false,
+    bestseller: true,
+    newArrival: false
+},
+{
+    book: {
+        author:"Mia Sheridan",
+            title: "Archer's Voice",
+            genre: "Romance",
+            choice:{
+                softcover:{ 
+                    image: "bookImages/archersvoice.jpg",
+                    price: "12.99"
+                },
+                hardcover: {
+                    image: "bookImages/archersvoice.jpg",
+                    price: "18.99"
+                }
+            }
+        },
+    favorite: false,
+    bestseller: true,
+    newArrival: false
+},
+{
+    book: {
+        author:"Emily Henry",
+            title: "Funny Story",
+            genre: "Romance",
+            choice:{
+                softcover:{ 
+                    image: "bookImages/funnystory.jpg",
+                    price: "18.99"
+                },
+                hardcover: {
+                    image: "bookImages/funnystory.jpg",
+                    price: "21.99"
+                }
+            }
+        },
+    favorite: false,
+    bestseller: true,
+    newArrival: true
+},
+{
+    book: {
+        author:"Colleen Hoover",
+            title: "Ugly Love",
+            genre: "Romance",
+            choice:{
+                softcover:{ 
+                    image: "bookImages/uglylove.jpg",
+                    price: "15.99"
+                },
+                hardcover: {
+                    image: "bookImages/uglylove.jpg",
+                    price: "19.99"
+                }
+            }
+        },
+    favorite: false,
+    bestseller: true,
+    newArrival: false
+},
+{
+    book: {
+        author:"Sarah A. Parker",
+            title: "When The Moon Hatched",
+            genre: "Fantasy",
+            choice:{
+                softcover:{ 
+                    image: "bookImages/whenthemoonhatched.jpg",
+                    price: "18.99"
+                },
+                hardcover: {
+                    image: "bookImages/whenthemoonhatched.jpg",
+                    price: "23.99"
+                }
+            }
+        },
+    favorite: false,
+    bestseller: false,
+    newArrival: true
+},
+{
+    book: {
+        author:"Kristen Ciccarelli",
+            title: "Heartless Hunter",
+            genre: "Fantasy",
+            choice:{
+                softcover:{ 
+                    image: "bookImages/heartlesshunter.jpg",
+                    price: "16.99"
+                },
+                hardcover: {
+                    image: "bookImages/heartlesshunter.jpg",
+                    price: "20.99"
+                }
+            }
+        },
+    favorite: false,
+    bestseller: true,
+    newArrival: true
+},
 ]
