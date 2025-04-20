@@ -100,4 +100,36 @@ figure img{
     height: auto;
     object-fit:fill;
 }
+#signup {
+    border: 2px solid black;
+    padding: 4px;
+    background-color: rgb(84, 135, 193);
+}
+.events{
+    background-color: rgb(215, 250, 250);
+}
+label {
+    display: block;
+    margin-bottom: 4px;
+  }
+input{
+    margin-bottom: 15px;
+    width: 200px;
+}
+select #event{
+    display: block;
+    margin-bottom: 25px;
+    justify-content: center;
 
+}
+.eventsignup{
+    text-align: center;
+    border: none;
+}
+button{
+    padding: 5px;
+    wigth: 200px;
+    display: block;
+    margin-left: 670px;
+    margin-top: 25px;
+}
