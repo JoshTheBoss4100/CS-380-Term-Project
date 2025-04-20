@@ -5,6 +5,8 @@
    <title>JJ Library</title>
    <link rel="stylesheet" href="style.css" />
    <link rel="icon" href="images/book.png"/>
+   <script src="js/data.js" type="text/javascript"></script>
+   <script src="js/functionShop.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
@@ -26,3 +28,17 @@
     <!-- <img id="left" src="images/blue-flower.png" alt="blueflower">
     <img id="right" src="images/blue-flower.png" alt="blueflower">  -->
 </nav>
+<p>Filter by Genre: </p>
+<select onchange="filterByGenre(this.value)">
+    <option value="All">All</option>
+    <option value="Fantasy">Fantasy</option>
+    <option value="Romance">Romance</option>
+    <option value ="Historical Fiction">Historical Fiction</option>
+    <option value="Mystery">Mystery</option>
+</select>
+<div id="shop_div">
+    <script>
+        DisplayAllBooks()
+    </script>
+</div>
+</body>
