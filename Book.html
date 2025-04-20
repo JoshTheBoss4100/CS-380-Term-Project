@@ -38,11 +38,31 @@
     <tbody>
         <td id="book"></td>
         <td id="synopsis"><h1>Synopsis</h1></td>
-        <td id="add_cart"><h1>Book Information</h1></td>
+        <td id="add_cart"><h1>Book Information</h1>
+        <h3 id="author">Author: </h3>
+        <h3 id="title">Title: </h3>
+        <h3 id="genre">Genre: </h3>
+        
+       
+            <input type="radio" name="radio" value="softcover" id="soft">
+          <label for="soft">Softcover</label>
+            <input type="radio" name="radio" value="hardcover" id="hard">
+          <label for="hard">Hardcover</label>
+          <h3 id="price">Price: </h3>
+          <br>
+            <button id="add_to_cart"></button>
+        
+        
+        
+        </td>
     </tbody>
    </table>
 
 
 </main>
-<script>BookInfo()</script>
+<script>
+    BookInfo()
+    addToCart()
+    updatePrice()
+</script>
 </body>

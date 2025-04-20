@@ -1,4 +1,4 @@
-const bookData = [{
+let bookData = [{
         book: {
             author:"Lynette Noni",
              title: "Arkanae",
@@ -17,7 +17,8 @@ const bookData = [{
         },
         favorite: true,
         bestseller: false,
-        newArrival: false
+        newArrival: false,
+        inCart: false
     },
 {
     book: {
@@ -38,7 +39,8 @@ const bookData = [{
     },
     favorite: true,
     bestseller: false,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -59,7 +61,8 @@ const bookData = [{
     },
     favorite: true,
     bestseller: false,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -80,7 +83,8 @@ const bookData = [{
     },
     favorite: true,
     bestseller: false,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -101,7 +105,8 @@ const bookData = [{
     },
     favorite: true,
     bestseller: false,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -122,7 +127,8 @@ const bookData = [{
     },
     favorite: true,
     bestseller: true,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -143,7 +149,8 @@ const bookData = [{
     },
     favorite: false,
     bestseller: true,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -164,7 +171,8 @@ const bookData = [{
     },
     favorite: false,
     bestseller: true,
-    newArrival: true
+    newArrival: true,
+    inCart: false
 },
 {
     book: {
@@ -185,7 +193,8 @@ const bookData = [{
     },
     favorite: true,
     bestseller: false,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -206,7 +215,8 @@ const bookData = [{
     },
     favorite: false,
     bestseller: false,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -227,7 +237,8 @@ const bookData = [{
     },
     favorite: false,
     bestseller: false,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -248,7 +259,8 @@ const bookData = [{
     },
     favorite: false,
     bestseller: true,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -269,7 +281,8 @@ const bookData = [{
     },
     favorite: false,
     bestseller: true,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -290,7 +303,8 @@ const bookData = [{
     },
     favorite: false,
     bestseller: false,
-    newArrival: true
+    newArrival: true,
+    inCart: false
 },
 {
     book: {
@@ -311,7 +325,8 @@ const bookData = [{
     },
     favorite: false,
     bestseller: false,
-    newArrival: true
+    newArrival: true,
+    inCart: false
 },
 {
     book: {
@@ -332,7 +347,8 @@ const bookData = [{
     },
     favorite: true,
     bestseller: true,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -353,7 +369,8 @@ const bookData = [{
         },
     favorite: false,
     bestseller: false,
-    newArrival: true
+    newArrival: true,
+    inCart: false
 },
 {
     book: {
@@ -374,7 +391,8 @@ const bookData = [{
     },
     favorite: false,
     bestseller: true,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -395,7 +413,8 @@ const bookData = [{
         },
     favorite: false,
     bestseller: true,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -416,7 +435,8 @@ const bookData = [{
         },
     favorite: false,
     bestseller: true,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -437,7 +457,8 @@ const bookData = [{
         },
     favorite: false,
     bestseller: true,
-    newArrival: true
+    newArrival: true,
+    inCart: false
 },
 {
     book: {
@@ -458,7 +479,8 @@ const bookData = [{
         },
     favorite: false,
     bestseller: false,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -479,7 +501,8 @@ const bookData = [{
         },
     favorite: false,
     bestseller: false,
-    newArrival: true
+    newArrival: true,
+    inCart: false
 },
 {
     book: {
@@ -500,7 +523,8 @@ const bookData = [{
         },
     favorite: false,
     bestseller: true,
-    newArrival: true
+    newArrival: true,
+    inCart: false
 },
 {
     book: {
@@ -521,7 +545,8 @@ const bookData = [{
         },
     favorite: true,
     bestseller: false,
-    newArrival: false
+    newArrival: false,
+    inCart: false
 },
 {
     book: {
@@ -542,6 +567,7 @@ const bookData = [{
         },
     favorite: true,
     bestseller: false,
-    newArrival: true
+    newArrival: true,
+    inCart: false
 },
 ]
