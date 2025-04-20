@@ -5,11 +5,11 @@ const bookData = [{
              genre: "Fantasy",
             choice:{
                 softcover:{ 
-                    image: "bookImages/arkanaehc.jpg",
+                    image: "bookImages/arkanaesc.jpg",
                     price: "12.99"
                 },
                 hardcover: {
-                    image: "bookImages/arkanaesc.jpg",
+                    image: "bookImages/arkanaehc.jpg",
                     price: "18.99"
                 }
             }
@@ -214,7 +214,7 @@ const bookData = [{
          genre: "Historical Fiction",
          choice:{
             softcover:{ 
-                image: "bookImages/Archillessc.jpg",
+                image: "bookImages/Achillessc.jpg",
                 price: "12.99"
             },
             hardcover: {
