@@ -56,8 +56,11 @@ window.addEventListener("load", function(){
 function BookInfo(){
     let urlParams = new URLSearchParams(window.location.search);
     let index = urlParams.get('id');
-    document.getElementById("book").innerHTML += `<img src="${bookData[index].book.choice.softcover.image}" alt="${bookData[index].book.title}">`;
-    
-
-
-}
+    let bookHTML = `
+     <figure>
+    <img src="${bookData[index].book.choice.softcover.image}" alt="${bookData[index].book.title}">
+    </figure>`;
+    document.getElementById("book").innerHTML += bookHTML;
+    document.getElementById("synopsis").innerHTML += bookData[index].book.description;
+   /* document.getElementById("add_cart").innerHTML += 1; */
+}  
