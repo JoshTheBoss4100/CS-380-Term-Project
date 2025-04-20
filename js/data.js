@@ -275,7 +275,7 @@ const bookData = [{
         }
     },
     favorite: false,
-    bestseller: true,
+    bestseller: false,
     newArrival: true
 },
 {
@@ -435,7 +435,7 @@ const bookData = [{
             }
         },
     favorite: false,
-    bestseller: true,
+    bestseller: false,
     newArrival: false
 },
 {
@@ -476,6 +476,46 @@ const bookData = [{
         },
     favorite: false,
     bestseller: true,
+    newArrival: true
+},
+{
+    book: {
+        author:"Elsie Silver",
+            title: "Flawless",
+            genre: "Romance",
+            choice:{
+                softcover:{ 
+                    image: "bookImages/flawless.jpg",
+                    price: "14.99"
+                },
+                hardcover: {
+                    image: "bookImages/flawless.jpg",
+                    price: "18.99"
+                }
+            }
+        },
+    favorite: true,
+    bestseller: false,
+    newArrival: false
+},
+{
+    book: {
+        author:"Elsie Silver",
+            title: "Heartless",
+            genre: "Romance",
+            choice:{
+                softcover:{ 
+                    image: "bookImages/heartless.jpg",
+                    price: "14.99"
+                },
+                hardcover: {
+                    image: "bookImages/heartless.jpg",
+                    price: "18.99"
+                }
+            }
+        },
+    favorite: true,
+    bestseller: false,
     newArrival: true
 },
 ]

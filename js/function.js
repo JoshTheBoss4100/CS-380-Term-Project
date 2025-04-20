@@ -24,3 +24,16 @@ function DisplayFavorites(){
     
     }
 }
+
+function DisplayArrivals(){
+    let count = 0;
+    for (book in bookData)
+    {
+        if (bookData[book].newArrival == true && count <= 4)
+        {
+            document.getElementById("arrivals_main").innerHTML += `<img src="${bookData[book].book.choice.softcover.image}" alt="${bookData[book].book.title}">`;
+            count = count + 1;
+        }
+    
+    }
+}
