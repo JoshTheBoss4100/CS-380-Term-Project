@@ -38,15 +38,7 @@ function DisplayArrivals(){
     }
 }
 
-window.addEventListener("load", function(){
-    let images = document.querySelectorAll("img");
-    for (let i = 0; i < images.length; i++)
-    {
-        images[i].addEventListener("click", function(){
-            window.location.href = `Book.html?id=${i}`
-        });
-    }
-});
+
 
 window.addEventListener("load", function(){
     let images = document.querySelectorAll("img");
