@@ -37,3 +37,35 @@ function DisplayArrivals(){
     
     }
 }
+
+window.addEventListener("load", function(){
+    let images = document.querySelectorAll("img");
+    for (let i = 0; i < images.length; i++)
+    {
+        images[i].addEventListener("click", function(){
+            window.location.href = `Book.html?id=${i}`
+        });
+    }
+});
+
+window.addEventListener("load", function(){
+    let images = document.querySelectorAll("img");
+    for (let i = 0; i < bookData.length; i++)
+    {
+        for(let j = 0; j < images.length; j++)
+            if (bookData[i].book.title == images[j].alt)
+            images[j].addEventListener("click", function(){
+                window.location.href = `Book.html?id=${i}`
+            });
+    }
+});
+
+
+function BookInfo(){
+    let urlParams = new URLSearchParams(window.location.search);
+    let index = urlParams.get('id');
+    document.getElementById("book").innerHTML += `<img src="${bookData[index].book.choice.softcover.image}" alt="${bookData[index].book.title}">`;
+    
+
+
+}
