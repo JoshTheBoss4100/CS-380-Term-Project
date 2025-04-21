@@ -189,3 +189,12 @@ textarea{
     color: azure;
     font-weight: 700;
 }
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+footer table{
+    width: 100%;
+}
