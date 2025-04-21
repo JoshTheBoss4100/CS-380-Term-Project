@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>JJ Library</title>
+   <link rel="stylesheet" href="style.css" />
+   <link rel="icon" href="images/book.png"/>
+</head>
+<body>
+<header>
+     <h1>Library</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="main.html">Home</a> </li>
+        <li><a href="shop.html">Shop</a> </li>
+        <li> <a href ="bestseller.html">Bestsellers</a> </li>
+        <li> <a href="favorite.html">Our Favorites</a> </li>
+        <li> <a href="New_Arrivals.html">New Arrivals</a></li>
+        <li><a href="event.html">Events</a> </li>
+        <li><a href="Return.html">Returns</a></li>
+        <li><a href="cart.html"><img id="cart" src="images/shopping-cart-icon-md.png" alt="shopping car"></a> </li>
+    </ul>
+    
+        
+    <!-- <img id="left" src="images/blue-flower.png" alt="blueflower">
+    <img id="right" src="images/blue-flower.png" alt="blueflower">  -->
+</nav>
+<div class="eventsignup">
+<h2>Event Signup</h2>
+  <form action="formsubmitted.html" method="POST">
+    <label class="signuplabel" for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first_name" required>
+
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last_name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="event">Select the event: </label>
+    <select id="event" name="event" required>
+        <option value="Book Swap">Book Swap</option>
+        <option value="Meetup">Rebecca Yarros Meetup</option>
+        <option value="Book Bingo">Book Bingo</option>
+        <option value ="Readthon Night">Read-a-thon Night</option>
+    </select>
+
+    <button id="signupbutton" type="submit">Sign Up</button>
+
+  </form>
+</div>
+
+</body>

@@ -108,7 +108,27 @@ figure img{
     height: auto;
     object-fit:fill;
 }
-
+#signup {
+    border: 2px solid black;
+    padding: 4px;
+    background-color: rgb(84, 135, 193);
+}
+.events{
+    background-color: rgb(215, 250, 250);
+}
+label {
+    display: block;
+    margin-bottom: 4px;
+  }
+input{
+    margin-bottom: 15px;
+    width: 200px;
+}
+select #event{
+    display: block;
+    margin-bottom: 25px;
+    justify-content: center;
+}
 section{
     display: inline-block;
 }
@@ -117,4 +137,20 @@ section img{
 }
 #full_cart p{
     font-size: 5em;
+}
+.eventsignup{
+    text-align: center;
+    border: none;
+}
+#signupbutton{
+    padding: 5px;
+    width: 100px;
+    display: block;
+    margin-left: 650px;
+    margin-top: 25px;
+    background-color: rgb(215, 250, 250);
+}
+.signuplabel{
+    display: block;
+    margin-bottom: 4px;
 }
