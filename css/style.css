@@ -198,6 +198,6 @@ html, body {
   }
 
   .content {
-    flex: 1; /* Takes up all available vertical space */
+    flex: 1; 
     padding: 2rem;
   }
