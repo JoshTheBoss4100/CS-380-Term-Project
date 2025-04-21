@@ -145,11 +145,11 @@ section img{
 #full_cart p{
     font-size: 5em;
 }
-.eventsignup{
+.form{
     text-align: center;
     border: none;
 }
-#signupbutton{
+#formbutton{
     padding: 5px;
     width: 100px;
     display: block;
@@ -160,6 +160,25 @@ section img{
 .signuplabel{
     display: block;
     margin-bottom: 4px;
+}
+footer{
+    background-color: rgb(215, 250, 250);
+}
+.footerul li{
+    display: block;
+}
+.footertd{
+    width: 72%;
+}
+textarea{
+    width: 200px;
+    height: 200px;
+}
+.formbutton{
+    margin-bottom: 85px;
+}
+#blank{
+    margin-bottom: 400px;
 }
 #purchase, button#add_to_cart{
     background-color: rgb(111, 170, 236);
