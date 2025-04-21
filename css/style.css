@@ -189,29 +189,7 @@ textarea{
     color: azure;
     font-weight: 700;
 }
-<<<<<<< HEAD
-/* footer{
-  position: fixed;
-=======
-body{
-display: flex;    
-flex-direction: column;
-min-height: 100vh;
 
-
-}
-footer{
-    margin-top: auto;
-  position: relative;
->>>>>>> 9475ce2e2f25e0b1c03724861370e9daaecb76ce
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-footer table{
-    width: 100%;
-}
-    */
 html, body {
     height: 100%;
     margin: 0;
