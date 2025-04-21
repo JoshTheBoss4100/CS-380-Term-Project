@@ -188,6 +188,7 @@ textarea{
     padding-bottom: 15px;
     color: azure;
     font-weight: 700;
+    width: 240px;
 }
 
 html, body {
