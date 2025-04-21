@@ -124,6 +124,13 @@ input{
     margin-bottom: 15px;
     width: 200px;
 }
+#full_cart label, #add_cart label{
+    display: inline;
+}
+input[type="radio"]{
+    width: auto;
+    display: inline;
+}
 select #event{
     display: block;
     margin-bottom: 25px;
@@ -153,4 +160,13 @@ section img{
 .signuplabel{
     display: block;
     margin-bottom: 4px;
+}
+#purchase, button#add_to_cart{
+    background-color: rgb(111, 170, 236);
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    color: azure;
+    font-weight: 700;
 }
