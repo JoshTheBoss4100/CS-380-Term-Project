@@ -1,7 +1,7 @@
 let bookData = [{
         book: {
             author:"Lynette Noni",
-             title: "Arkanae",
+             title: "Arkarnae",
              genre: "Fantasy",
             choice:{
                 softcover:{ 
