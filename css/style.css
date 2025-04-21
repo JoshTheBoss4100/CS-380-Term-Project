@@ -189,7 +189,7 @@ textarea{
     color: azure;
     font-weight: 700;
 }
-footer{
+/* footer{
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -198,3 +198,15 @@ footer{
 footer table{
     width: 100%;
 }
+    */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    flex: 1; /* Takes up all available vertical space */
+    padding: 2rem;
+  }
