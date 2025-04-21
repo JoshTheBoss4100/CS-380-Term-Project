@@ -189,8 +189,16 @@ textarea{
     color: azure;
     font-weight: 700;
 }
+body{
+display: flex;    
+flex-direction: column;
+min-height: 100vh;
+
+
+}
 footer{
-  position: fixed;
+    margin-top: auto;
+  position: relative;
   bottom: 0;
   width: 100%;
   text-align: center;
