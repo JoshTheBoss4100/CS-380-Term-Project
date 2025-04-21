@@ -122,11 +122,11 @@ select #event{
     justify-content: center;
 
 }
-.eventsignup{
+.form{
     text-align: center;
     border: none;
 }
-#signupbutton{
+#formbutton{
     padding: 5px;
     width: 100px;
     display: block;
@@ -137,4 +137,23 @@ select #event{
 .signuplabel{
     display: block;
     margin-bottom: 4px;
+}
+footer{
+    background-color: rgb(215, 250, 250);
+}
+.footerul li{
+    display: block;
+}
+.footertd{
+    width: 72%;
+}
+textarea{
+    width: 200px;
+    height: 200px;
+}
+.formbutton{
+    margin-bottom: 85px;
+}
+#blank{
+    margin-bottom: 400px;
 }
