@@ -54,14 +54,22 @@ a:active{
     text-decoration: none;
     color:black;
 }
-#bestseller_main img,#favorites_main img,  #shop_div img, #arrivals_main img {
+#bestseller_main img,#favorites_main img,  #shop_div img, #arrivals_main img, #full_cart img {
     width: 200px;
     height: auto;
     margin: 30px;
 }
-#bestseller_main img:hover,#favorites_main img:hover, #shop_div img:hover, #arrivals_main img:hover {
+#bestseller_main img:hover,#favorites_main img:hover, #shop_div img:hover, #arrivals_main img:hover, #full_cart img:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+#full_cart img{
+    width: 200px;
+    height: auto;
+    margin: 30px;
+   
 }
 
 
@@ -101,3 +109,12 @@ figure img{
     object-fit:fill;
 }
 
+section{
+    display: inline-block;
+}
+section img{
+    display: block;
+}
+#full_cart p{
+    font-size: 5em;
+}

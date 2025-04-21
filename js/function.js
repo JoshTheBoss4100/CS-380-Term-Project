@@ -108,6 +108,43 @@ window.addEventListener("load", function(){
     }
 })
 
+window.addEventListener("load", function(){
+    for(let i in bookData)
+    if (document.getElementById(`soft${i}`) && document.getElementById(`hard${i}`)){
+    document.getElementById(`soft${i}`).addEventListener("change", () => updateCartPrice(i));
+    document.getElementById(`hard${i}`).addEventListener("change", () => updateCartPrice(i));
+    }
+})
+
+function updateCartPrice(i){
+    if (document.getElementById(`soft${i}`).checked)
+        document.getElementById(`price${i}`).textContent = "Price: $" + bookData[i].book.choice.softcover.price;
+    else if (document.getElementById(`hard${i}`).checked)
+        document.getElementById(`price${i}`).textContent = "Price: $" + bookData[i].book.choice.hardcover.price;
+    calculateTotal();
+
+}
+function displayCart(){
+    let empty = true;
+    for (let index in bookData){
+        if(bookData[index].inCart==true){
+            empty = false;
+            document.getElementById("full_cart").innerHTML += `
+                <section id="book#${index}"">
+                    <img src="${bookData[index].book.choice.softcover.image}" alt="${bookData[index].book.title}">
+                    <input type="radio" name="cover${index}" value="softcover" id="soft${index}" checked>
+                    <label for="soft${index}">Softcover</label>
+                    <input type="radio" name="cover${index}" value="hardcover" id="hard${index}">
+                    <label for="hard${index}">Hardcover</label>
+                    <h3 class="price" id="price${index}">Price: ${bookData[index].book.choice.softcover.price}</h3>
+                </section>
+            `;}
+    }
+    if (empty)
+        document.getElementById("full_cart").innerHTML = "<p>Cart is empty, please add some books to purchase them</p>";
+    calculateTotal();
+
+}
 function updatePrice(){
     let index = grabBookId();
     if (document.getElementById("soft").checked)
@@ -115,3 +152,39 @@ function updatePrice(){
     else if (document.getElementById("hard").checked)
         document.getElementById("price").textContent = "Price: $" + bookData[index].book.choice.hardcover.price;
 }
+
+function calculateTotal() {
+    let total = 0;
+    for (let i in bookData) {
+        if (bookData[i].inCart === true) {
+            const soft = document.getElementById(`soft${i}`);
+            const hard = document.getElementById(`hard${i}`);
+            if (soft?.checked) {
+                total += parseFloat(bookData[i].book.choice.softcover.price);
+            } else if (hard?.checked) {
+                total += parseFloat(bookData[i].book.choice.hardcover.price);
+            }
+        }
+    }
+    console.log(typeof(total))
+    document.getElementById("cart_total").textContent = "Total: $" + total.toFixed(2);
+}
+function clearCart(){
+document.getElementById("purchase").addEventListener("click", function () {
+    let Empty = true;
+    for (let i in bookData) {
+        if (bookData[i].inCart) {
+            Empty = false;
+            bookData[i].inCart = false;
+        }
+    }
+if (!Empty)
+    document.getElementById("full_cart").innerHTML = "<p>Thank you for your purchase!</p>";
+else
+    document.getElementById("full_cart").innerHTML = "<p>Cart is empty, please add some books to purchase them</p>";
+
+    localStorage.setItem("bookData", JSON.stringify(bookData));
+    calculateTotal();
+});}
+
+

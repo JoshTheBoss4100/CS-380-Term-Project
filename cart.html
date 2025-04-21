@@ -5,6 +5,8 @@
    <title>JJ Library</title>
    <link rel="stylesheet" href="style.css" />
    <link rel="icon" href="images/book.png"/>
+   <script src="js/data.js" type="text/javascript"></script>
+   <script src="js/function.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
@@ -26,3 +28,11 @@
     <!-- <img id="left" src="images/blue-flower.png" alt="blueflower">
     <img id="right" src="images/blue-flower.png" alt="blueflower">  -->
 </nav>
+<main>
+<div id="full_cart">
+</div>
+<h2 id="cart_total">Total: $0.00</h2>
+<button id="purchase">Purchase</button>
+</main>
+<script>displayCart(), clearCart()</script>
+</body>
